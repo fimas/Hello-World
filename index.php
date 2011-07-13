@@ -6,11 +6,17 @@
 <?php        
     } else {
 ?>
+<style type="text/css">
+    input[type=submit] {
+        background: url(images/ok.png) no-repeat;
+        padding-left: 18px;
+    }
+</style>
 <p>Hello, world! My name is fimas. What is your name?</p>
 <form action="index.php" method="get">
     <input type="text" name="name">
     <br>
-    <input type="submit" value="Tell me your name">
+    <input type="submit" value="Tell me your name!">
 </form>
 <?php
     }
