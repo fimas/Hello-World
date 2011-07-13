@@ -24,9 +24,9 @@
     
     echo $car->getSpeed(); // Prints 25
     
-    $car->accelerate();
-    $car->decelerate();
-    $car->decelerate();
+    $car->accelerate(); // +1
+    $car->decelerate(); // -1
+    $car->decelerate(); // -1
     
     echo $car->getSpeed(); // Prints 24
 ?>
