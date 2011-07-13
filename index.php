@@ -1,7 +1,7 @@
 <?php
     if(isset($_GET['name'])) {
 ?>
-    <p>Hello, <?=$_GET['name']; ?>! It's nice meeting you.</p>
+    <p>Hello, <?php echo $_GET['name']; ?>! It's nice meeting you.</p>
     <p>Did I get your name wrong!? Click <a href="index.php">here</a> and tell me again.</p>
 <?php        
     } else {
