@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
 <?php
     if(isset($_GET['name'])) {
 ?>
@@ -6,17 +11,14 @@
 <?php        
     } else {
 ?>
-<style type="text/css">
-    input[type=submit] {
-        background: url(images/ok.png) no-repeat;
-        padding-left: 18px;
-    }
-</style>
 <p>Hello, world! My name is fimas. What is your name?</p>
-<form action="index.php" method="get">
-    <input type="text" name="name">
-    <br>
-    <input type="submit" value="Tell me your name!">
+<form action="index.php" method="get" name="name_form">
+    <p>
+        <input type="text" name="name">
+    </p>
+    <p>
+        <button onclick="document.name_form.submit"><img src="images/ok.png">Tell me your name!</button>
+    </p>
 </form>
 <?php
     }

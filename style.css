@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+    margin: 12px 25px;
+    font-size: .8em;
+}
+
+input {
+    padding: 3px;
+}
+
+button {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.12, #E0DDE0), color-stop(0.41, #F7F7F7));
+    background-image: -moz-linear-gradient(center bottom, #E0DDE0 12%, #F7F7F7 41%);
+    border: 1px solid #eee;
+    border-bottom: 1px solid #fff;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px #111;
+}
+
+button img {
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+}
+
+button:active {
+    box-shadow: 0px 0px 1px #111;
+}
