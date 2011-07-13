@@ -1,32 +1,17 @@
 <?php
-    // Prints the string "Hello World!" to the screen
-    class Car {
-        private $speed;
-        
-        public function __construct($s) {
-            $this->speed = $s; // Set initial speed
-        }
-        
-        public function accelerate() {
-            $this->speed++;
-        }
-        
-        public function decelerate() {
-            $this->speed--;
-        }
-        
-        public function getSpeed() {
-            return $this->speed;
-        }
+    if(isset($_GET['name'])) {
+?>
+    <p>Hello, <?=$_GET['name']; ?>! It's nice meeting you.</p>
+    <p>Did I get your name wrong!? Click <a href="index.php">here</a> and tell me again.</p>
+<?php        
+    } else {
+?>
+<p>Hello, world! My name is fimas. What is your name?</p>
+<form action="index.php" method="get">
+    <input type="text" name="name">
+    <br>
+    <input type="submit" value="Tell me your name">
+</form>
+<?php
     }
-    
-    $car = new Car(25);
-    
-    echo $car->getSpeed(); // Prints 25
-    
-    $car->accelerate(); // +1
-    $car->decelerate(); // -1
-    $car->decelerate(); // -1
-    
-    echo $car->getSpeed(); // Prints 24
 ?>
